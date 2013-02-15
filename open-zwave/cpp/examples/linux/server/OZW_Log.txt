@@ -1,0 +1,1052 @@
+2012-12-30 18:02:30:547 mgr,     Added driver for controller /dev/ttyUSB0
+2012-12-30 18:02:30:547   Opening controller /dev/ttyUSB0
+2012-12-30 18:02:30:548 Trying to open serial port /dev/ttyUSB0 (attempt 1)
+2012-12-30 18:02:30:550 Serial port /dev/ttyUSB0 opened (attempt 1)
+2012-12-30 18:02:30:551 contrlr, Queuing command: FUNC_ID_ZW_GET_VERSION: 0x01, 0x03, 0x00, 0x15, 0xe9
+2012-12-30 18:02:30:551 contrlr, Queuing command: FUNC_ID_ZW_MEMORY_GET_ID: 0x01, 0x03, 0x00, 0x20, 0xdc
+2012-12-30 18:02:30:551 contrlr, Queuing command: FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES: 0x01, 0x03, 0x00, 0x05, 0xf9
+2012-12-30 18:02:30:551 contrlr, Queuing command: FUNC_ID_SERIAL_API_GET_CAPABILITIES: 0x01, 0x03, 0x00, 0x07, 0xfb
+2012-12-30 18:02:30:551 contrlr, Queuing command: FUNC_ID_ZW_GET_SUC_NODE_ID: 0x01, 0x03, 0x00, 0x56, 0xaa
+2012-12-30 18:02:30:552 contrlr, WriteMsg WriteNextMsg m_currentMsg=380010e0
+2012-12-30 18:02:30:552 
+2012-12-30 18:02:30:552 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x15) - FUNC_ID_ZW_GET_VERSION: 0x01, 0x03, 0x00, 0x15, 0xe9
+2012-12-30 18:02:30:555 contrlr,   ACK received CallbackId 0x00 Reply 0x15
+2012-12-30 18:02:30:555 contrlr,   Received: 0x01, 0x10, 0x01, 0x15, 0x5a, 0x2d, 0x57, 0x61, 0x76, 0x65, 0x20, 0x32, 0x2e, 0x37, 0x38, 0x00, 0x01, 0x9b
+2012-12-30 18:02:30:555 
+2012-12-30 18:02:30:556 contrlr, Received reply to FUNC_ID_ZW_GET_VERSION:
+2012-12-30 18:02:30:556 contrlr,     Static Controller library, version Z-Wave 2.78
+2012-12-30 18:02:30:556 contrlr,   Expected reply was received
+2012-12-30 18:02:30:556 contrlr,   Message transaction complete
+2012-12-30 18:02:30:556 
+2012-12-30 18:02:30:556 contrlr, WriteMsg WriteNextMsg m_currentMsg=380013a0
+2012-12-30 18:02:30:556 
+2012-12-30 18:02:30:556 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x20) - FUNC_ID_ZW_MEMORY_GET_ID: 0x01, 0x03, 0x00, 0x20, 0xdc
+2012-12-30 18:02:30:558 contrlr,   ACK received CallbackId 0x00 Reply 0x20
+2012-12-30 18:02:30:559 contrlr,   Received: 0x01, 0x08, 0x01, 0x20, 0x01, 0x4d, 0x02, 0xa8, 0x01, 0x31
+2012-12-30 18:02:30:559 
+2012-12-30 18:02:30:559 contrlr, Received reply to FUNC_ID_ZW_MEMORY_GET_ID. Home ID = 0x014d02a8.  Our node ID = 1
+2012-12-30 18:02:30:560 contrlr,   Expected reply was received
+2012-12-30 18:02:30:560 contrlr,   Message transaction complete
+2012-12-30 18:02:30:560 
+2012-12-30 18:02:30:560 contrlr, WriteMsg WriteNextMsg m_currentMsg=38001620
+2012-12-30 18:02:30:560 
+2012-12-30 18:02:30:560 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x05) - FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES: 0x01, 0x03, 0x00, 0x05, 0xf9
+2012-12-30 18:02:30:562 contrlr,   ACK received CallbackId 0x00 Reply 0x05
+2012-12-30 18:02:30:562 contrlr,   Received: 0x01, 0x04, 0x01, 0x05, 0x08, 0xf7
+2012-12-30 18:02:30:563 
+2012-12-30 18:02:30:563 contrlr, Received reply to FUNC_ID_ZW_GET_CONTROLLER_CAPABILITIES:
+2012-12-30 18:02:30:563 contrlr,     There is no SUC ID Server (SIS) in this network.
+2012-12-30 18:02:30:563 contrlr,     The PC controller is a primary controller.
+2012-12-30 18:02:30:563 contrlr,   Expected reply was received
+2012-12-30 18:02:30:564 contrlr,   Message transaction complete
+2012-12-30 18:02:30:564 
+2012-12-30 18:02:30:564 contrlr, WriteMsg WriteNextMsg m_currentMsg=38001830
+2012-12-30 18:02:30:564 
+2012-12-30 18:02:30:564 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x07) - FUNC_ID_SERIAL_API_GET_CAPABILITIES: 0x01, 0x03, 0x00, 0x07, 0xfb
+2012-12-30 18:02:30:570 contrlr,   ACK received CallbackId 0x00 Reply 0x07
+2012-12-30 18:02:30:570 contrlr,   Received: 0x01, 0x2b, 0x01, 0x07, 0x03, 0x07, 0x00, 0x86, 0x00, 0x02, 0x00, 0x01, 0xfe, 0x80, 0xfe, 0x88, 0x0f, 0x00, 0x00, 0x00, 0xfb, 0x97, 0x7f, 0x82, 0x07, 0x00, 0x00, 0x80, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xc2
+2012-12-30 18:02:30:570 
+2012-12-30 18:02:30:570 contrlr,  Received reply to FUNC_ID_SERIAL_API_GET_CAPABILITIES
+2012-12-30 18:02:30:571 contrlr,     Serial API Version:   3.7
+2012-12-30 18:02:30:571 contrlr,     Manufacturer ID:      0x0086
+2012-12-30 18:02:30:571 contrlr,     Product Type:         0x0002
+2012-12-30 18:02:30:571 contrlr,     Product ID:           0x0001
+2012-12-30 18:02:30:571 contrlr, Queuing command: FUNC_ID_ZW_GET_RANDOM: 0x01, 0x04, 0x00, 0x1c, 0x20, 0xc7
+2012-12-30 18:02:30:571 contrlr, Queuing command: FUNC_ID_SERIAL_API_GET_INIT_DATA: 0x01, 0x03, 0x00, 0x02, 0xfe
+2012-12-30 18:02:30:571 contrlr,   Expected reply was received
+2012-12-30 18:02:30:572 contrlr,   Message transaction complete
+2012-12-30 18:02:30:572 
+2012-12-30 18:02:30:572 contrlr, WriteMsg WriteNextMsg m_currentMsg=38001a40
+2012-12-30 18:02:30:572 
+2012-12-30 18:02:30:572 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x56) - FUNC_ID_ZW_GET_SUC_NODE_ID: 0x01, 0x03, 0x00, 0x56, 0xaa
+2012-12-30 18:02:30:574 contrlr,   ACK received CallbackId 0x00 Reply 0x56
+2012-12-30 18:02:30:574 contrlr,   Received: 0x01, 0x04, 0x01, 0x56, 0x00, 0xac
+2012-12-30 18:02:30:575 
+2012-12-30 18:02:30:575 contrlr, Received reply to GET_SUC_NODE_ID.  Node ID = 0
+2012-12-30 18:02:30:575 contrlr,   Expected reply was received
+2012-12-30 18:02:30:575 contrlr,   Message transaction complete
+2012-12-30 18:02:30:575 
+2012-12-30 18:02:30:575 contrlr, WriteMsg WriteNextMsg m_currentMsg=380026e0
+2012-12-30 18:02:30:575 
+2012-12-30 18:02:30:575 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x1c) - FUNC_ID_ZW_GET_RANDOM: 0x01, 0x04, 0x00, 0x1c, 0x20, 0xc7
+2012-12-30 18:02:30:577 contrlr,   ACK received CallbackId 0x00 Reply 0x1c
+2012-12-30 18:02:30:628 contrlr,   Received: 0x01, 0x25, 0x01, 0x1c, 0x01, 0x20, 0xed, 0xa1, 0xc1, 0x22, 0x99, 0xed, 0x31, 0xc1, 0x2e, 0x8e, 0x2c, 0x4c, 0x0c, 0xe2, 0x91, 0xba, 0xe1, 0xe4, 0xe0, 0x0e, 0xb2, 0xec, 0xff, 0xf2, 0x8d, 0x28, 0xf5, 0x28, 0x63, 0x96, 0xe6, 0x6e, 0x75
+2012-12-30 18:02:30:629 
+2012-12-30 18:02:30:629 contrlr, Received reply to FUNC_ID_ZW_GET_RANDOM: true
+2012-12-30 18:02:30:629 contrlr,   Expected reply was received
+2012-12-30 18:02:30:629 contrlr,   Message transaction complete
+2012-12-30 18:02:30:629 
+2012-12-30 18:02:30:630 contrlr, WriteMsg WriteNextMsg m_currentMsg=380029f0
+2012-12-30 18:02:30:630 
+2012-12-30 18:02:30:630 contrlr, Sending command (Callback ID=0x00, Expected Reply=0x02) - FUNC_ID_SERIAL_API_GET_INIT_DATA: 0x01, 0x03, 0x00, 0x02, 0xfe
+2012-12-30 18:02:30:631 contrlr,   ACK received CallbackId 0x00 Reply 0x02
+2012-12-30 18:02:30:679 contrlr,   Received: 0x01, 0x25, 0x01, 0x02, 0x05, 0x00, 0x1d, 0xa7, 0x37, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0x01, 0x53
+2012-12-30 18:02:30:679 
+2012-12-30 18:02:30:679 mgr,     Driver with Home ID of 0x014d02a8 is now ready.
+2012-12-30 18:02:30:680 
+2012-12-30 18:02:30:691 Missing default byte value from xml configuration: node 1, class 0x20, instance 1, index 0
+2012-12-30 18:02:30:691 Missing default byte value from xml configuration: node 2, class 0x26, instance 1, index 0
+2012-12-30 18:02:30:692 Missing default byte value from xml configuration: node 2, class 0x26, instance 1, index 4
+2012-12-30 18:02:30:692 Missing default byte value from xml configuration: node 3, class 0x20, instance 1, index 0
+2012-12-30 18:02:30:692 Missing default integer value from xml configuration: node 3, class 0x84, instance 1, index 0
+2012-12-30 18:02:30:693 Missing default byte value from xml configuration: node 6, class 0x20, instance 1, index 0
+2012-12-30 18:02:30:693 Missing default byte value from xml configuration: node 6, class 0x26, instance 1, index 0
+2012-12-30 18:02:30:693 Missing default byte value from xml configuration: node 6, class 0x26, instance 1, index 4
+2012-12-30 18:02:30:693 Missing default list value or vindex from xml configuration: node 6, class 0x27, instance 1, index 0
+2012-12-30 18:02:30:693 Missing default list value or vindex from xml configuration: node 6, class 0x75, instance 1, index 0
+2012-12-30 18:02:30:694 Missing default byte value from xml configuration: node 8, class 0x20, instance 1, index 0
+2012-12-30 18:02:30:694 Missing default byte value from xml configuration: node 9, class 0x20, instance 1, index 0
+2012-12-30 18:02:30:694 Missing default byte value from xml configuration: node 9, class 0x26, instance 1, index 4
+2012-12-30 18:02:30:694 Missing default list value or vindex from xml configuration: node 9, class 0x27, instance 1, index 0
+2012-12-30 18:02:30:695 Missing default byte value from xml configuration: node 10, class 0x26, instance 1, index 4
+2012-12-30 18:02:30:695 Missing default byte value from xml configuration: node 13, class 0x26, instance 1, index 4
+2012-12-30 18:02:30:695 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 1
+2012-12-30 18:02:30:695 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 1
+2012-12-30 18:02:30:696 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 2
+2012-12-30 18:02:30:696 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 2
+2012-12-30 18:02:30:696 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 3
+2012-12-30 18:02:30:696 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 3
+2012-12-30 18:02:30:696 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 4
+2012-12-30 18:02:30:696 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 4
+2012-12-30 18:02:30:696 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 5
+2012-12-30 18:02:30:696 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 5
+2012-12-30 18:02:30:697 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 6
+2012-12-30 18:02:30:697 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 6
+2012-12-30 18:02:30:697 Missing default byte value from xml configuration: node 13, class 0x70, instance 1, index 7
+2012-12-30 18:02:30:697 Missing default byte value from xml configuration: node 13, class 0x70, instance 1, index 8
+2012-12-30 18:02:30:697 Missing default byte value from xml configuration: node 13, class 0x70, instance 1, index 9
+2012-12-30 18:02:30:697 Missing default byte value from xml configuration: node 13, class 0x70, instance 1, index 10
+2012-12-30 18:02:30:697 Missing default byte value from xml configuration: node 13, class 0x70, instance 1, index 11
+2012-12-30 18:02:30:697 Missing default byte value from xml configuration: node 13, class 0x70, instance 1, index 12
+2012-12-30 18:02:30:698 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 13
+2012-12-30 18:02:30:698 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 13
+2012-12-30 18:02:30:698 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 14
+2012-12-30 18:02:30:698 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 14
+2012-12-30 18:02:30:698 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 15
+2012-12-30 18:02:30:698 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 15
+2012-12-30 18:02:30:698 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 19
+2012-12-30 18:02:30:698 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 19
+2012-12-30 18:02:30:699 Missing default byte value from xml configuration: node 13, class 0x70, instance 1, index 20
+2012-12-30 18:02:30:699 Value size is invalid. Only 1, 2 & 4 supported for node 13, class 0x70, instance 1, index 22
+2012-12-30 18:02:30:699 Missing default list value or vindex from xml configuration: node 13, class 0x70, instance 1, index 22
+2012-12-30 18:02:30:699 contrlr, Deleting all return routes from node 13
+2012-12-30 18:02:30:699 Node013, Queuing command: Deleting return routes (Node=13): 0x01, 0x05, 0x00, 0x47, 0x0d, 0x01, 0xb1
+2012-12-30 18:02:30:700 Missing default byte value from xml configuration: node 14, class 0x26, instance 1, index 0
+2012-12-30 18:02:30:700 Missing default byte value from xml configuration: node 14, class 0x26, instance 1, index 4
+2012-12-30 18:02:30:700 contrlr, Received reply to FUNC_ID_SERIAL_API_GET_INIT_DATA:
+2012-12-30 18:02:30:700 contrlr,     Node 001 - Known
+2012-12-30 18:02:30:701 Node001, QueryStage_Associations
+2012-12-30 18:02:30:701 Node001, QueryStage_Neighbors
+2012-12-30 18:02:30:701 contrlr, Requesting routing info (neighbor list) for Node 1
+2012-12-30 18:02:30:701 Node001, Queuing command: Get Routing Info (Node=1): 0x01, 0x07, 0x00, 0x80, 0x01, 0x00, 0x00, 0x03, 0x7a
+2012-12-30 18:02:30:701 Node001, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:30:701 contrlr,     Node 002 - Known
+2012-12-30 18:02:30:701 Node002, QueryStage_Associations
+2012-12-30 18:02:30:701 Node002, QueryStage_Neighbors
+2012-12-30 18:02:30:701 contrlr, Requesting routing info (neighbor list) for Node 2
+2012-12-30 18:02:30:701 Node002, Queuing command: Get Routing Info (Node=2): 0x01, 0x07, 0x00, 0x80, 0x02, 0x00, 0x00, 0x03, 0x79
+2012-12-30 18:02:30:701 Node002, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:30:702 contrlr,     Node 003 - Known
+2012-12-30 18:02:30:702 Node003, QueryStage_Associations
+2012-12-30 18:02:30:702 Node003, QueryStage_Neighbors
+2012-12-30 18:02:30:702 contrlr, Requesting routing info (neighbor list) for Node 3
+2012-12-30 18:02:30:702 Node003, Queuing command: Get Routing Info (Node=3): 0x01, 0x07, 0x00, 0x80, 0x03, 0x00, 0x00, 0x03, 0x78
+2012-12-30 18:02:30:702 Node003, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:30:702 contrlr,     Node 006 - Known
+2012-12-30 18:02:30:702 Node006, QueryStage_Associations
+2012-12-30 18:02:30:702 Node006, QueryStage_Neighbors
+2012-12-30 18:02:30:702 contrlr, Requesting routing info (neighbor list) for Node 6
+2012-12-30 18:02:30:703 Node006, Queuing command: Get Routing Info (Node=6): 0x01, 0x07, 0x00, 0x80, 0x06, 0x00, 0x00, 0x03, 0x7d
+2012-12-30 18:02:30:703 Node006, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:30:703 contrlr,     Node 008 - Known
+2012-12-30 18:02:30:703 Node008, QueryStage_Associations
+2012-12-30 18:02:30:703 Node008, QueryStage_Neighbors
+2012-12-30 18:02:30:703 contrlr, Requesting routing info (neighbor list) for Node 8
+2012-12-30 18:02:30:703 Node008, Queuing command: Get Routing Info (Node=8): 0x01, 0x07, 0x00, 0x80, 0x08, 0x00, 0x00, 0x03, 0x73
+2012-12-30 18:02:30:703 Node008, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:30:703 contrlr,     Node 009 - Known
+2012-12-30 18:02:30:703 Node009, QueryStage_Associations
+2012-12-30 18:02:30:704 Node009, QueryStage_Neighbors
+2012-12-30 18:02:30:704 contrlr, Requesting routing info (neighbor list) for Node 9
+2012-12-30 18:02:30:704 Node009, Queuing command: Get Routing Info (Node=9): 0x01, 0x07, 0x00, 0x80, 0x09, 0x00, 0x00, 0x03, 0x72
+2012-12-30 18:02:30:704 Node009, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:30:704 contrlr,     Node 010 - Known
+2012-12-30 18:02:30:704 Node010, QueryStage_Associations
+2012-12-30 18:02:30:704 Node010, QueryStage_Neighbors
+2012-12-30 18:02:30:704 contrlr, Requesting routing info (neighbor list) for Node 10
+2012-12-30 18:02:30:704 Node010, Queuing command: Get Routing Info (Node=10): 0x01, 0x07, 0x00, 0x80, 0x0a, 0x00, 0x00, 0x03, 0x71
+2012-12-30 18:02:30:704 Node010, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:30:704 contrlr,     Node 011 - Known
+2012-12-30 18:02:30:705 Node011, QueryStage_Associations
+2012-12-30 18:02:30:705 Node011, QueryStage_Neighbors
+2012-12-30 18:02:30:705 contrlr, Requesting routing info (neighbor list) for Node 11
+2012-12-30 18:02:30:705 Node011, Queuing command: Get Routing Info (Node=11): 0x01, 0x07, 0x00, 0x80, 0x0b, 0x00, 0x00, 0x03, 0x70
+2012-12-30 18:02:30:705 Node011, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:30:705 contrlr,     Node 013 - Known
+2012-12-30 18:02:30:705 Node013, QueryStage_Associations
+2012-12-30 18:02:30:705 Node013, Number of association groups reported for node 13 is 4.
+2012-12-30 18:02:30:705 Node013, Get Associations for group 1 of node 13
+2012-12-30 18:02:30:705 Node013, Queuing command: Get Associations (Node=13): 0x01, 0x0a, 0x00, 0x13, 0x0d, 0x03, 0x85, 0x02, 0x01, 0x05, 0x02, 0x69
+2012-12-30 18:02:30:706 Node013, Queuing Command: Query Stage Complete (Associations)
+2012-12-30 18:02:30:706 contrlr,     Node 014 - Known
+2012-12-30 18:02:30:706 Node014, QueryStage_Associations
+2012-12-30 18:02:30:706 Node014, QueryStage_Neighbors
+2012-12-30 18:02:30:706 contrlr, Requesting routing info (neighbor list) for Node 14
+2012-12-30 18:02:30:706 Node014, Queuing command: Get Routing Info (Node=14): 0x01, 0x07, 0x00, 0x80, 0x0e, 0x00, 0x00, 0x03, 0x75
+2012-12-30 18:02:30:706 Node014, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:30:706 contrlr,   Expected reply was received
+2012-12-30 18:02:30:706 contrlr,   Message transaction complete
+2012-12-30 18:02:30:707 
+2012-12-30 18:02:30:707 Node013, WriteMsg WriteNextMsg m_currentMsg=380577a0
+2012-12-30 18:02:30:707 
+2012-12-30 18:02:30:707 Node013, Sending command (Callback ID=0x01, Expected Reply=0x47) - Deleting return routes (Node=13): 0x01, 0x05, 0x00, 0x47, 0x0d, 0x01, 0xb1
+2012-12-30 18:02:30:708 Node013,   ACK received CallbackId 0x01 Reply 0x47
+2012-12-30 18:02:30:712 Node013,   Received: 0x01, 0x04, 0x01, 0x47, 0x01, 0xbc
+2012-12-30 18:02:30:712 
+2012-12-30 18:02:30:712 Node013, Received reply to FUNC_ID_ZW_DELETE_RETURN_ROUTE - command in progress
+2012-12-30 18:02:30:712 Node013,   Expected callbackId was received
+2012-12-30 18:02:30:712 IsExpectedReply: m_expectedNodeId = 13 m_expectedReply = 47
+2012-12-30 18:02:32:708 Node013, WriteMsg Wait Timeout m_currentMsg=380577a0
+2012-12-30 18:02:32:708 
+2012-12-30 18:02:32:708 Node013, Sending command (Attempt 2, Callback ID=0x01, Expected Reply=0x47) - Deleting return routes (Node=13): 0x01, 0x05, 0x00, 0x47, 0x0d, 0x01, 0xb1
+2012-12-30 18:02:32:721 Node013,   ACK received CallbackId 0x01 Reply 0x47
+2012-12-30 18:02:32:721 Node013,   Received: 0x01, 0x04, 0x01, 0x47, 0x00, 0xbd
+2012-12-30 18:02:32:721 
+2012-12-30 18:02:32:722 Node013, WARNING: Received reply to FUNC_ID_ZW_DELETE_RETURN_ROUTE - command failed
+2012-12-30 18:02:32:722 Node001, WriteMsg WriteNextMsg m_currentMsg=38038490
+2012-12-30 18:02:32:722 
+2012-12-30 18:02:32:722 Node001, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=1): 0x01, 0x07, 0x00, 0x80, 0x01, 0x00, 0x00, 0x03, 0x7a
+2012-12-30 18:02:32:724 Node001,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:32:728 Node001,   Received: 0x01, 0x20, 0x01, 0x80, 0xa6, 0x37, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xcf
+2012-12-30 18:02:32:728 
+2012-12-30 18:02:32:728 Node001, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:32:728 Node001,     Neighbors of this node are:
+2012-12-30 18:02:32:728 Node001,     Node 2
+2012-12-30 18:02:32:728 Node001,     Node 3
+2012-12-30 18:02:32:729 Node001,     Node 6
+2012-12-30 18:02:32:729 Node001,     Node 8
+2012-12-30 18:02:32:729 Node001,     Node 9
+2012-12-30 18:02:32:729 Node001,     Node 10
+2012-12-30 18:02:32:729 Node001,     Node 11
+2012-12-30 18:02:32:729 Node001,     Node 13
+2012-12-30 18:02:32:729 Node001,     Node 14
+2012-12-30 18:02:32:729 Node001,   Expected reply was received
+2012-12-30 18:02:32:730 Node001,   Message transaction complete
+2012-12-30 18:02:32:730 
+2012-12-30 18:02:32:730 Node002, WriteMsg WriteNextMsg m_currentMsg=3803e6c0
+2012-12-30 18:02:32:730 
+2012-12-30 18:02:32:730 Node002, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=2): 0x01, 0x07, 0x00, 0x80, 0x02, 0x00, 0x00, 0x03, 0x79
+2012-12-30 18:02:32:732 Node002,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:32:736 Node002,   Received: 0x01, 0x20, 0x01, 0x80, 0xa1, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xfd
+2012-12-30 18:02:32:736 
+2012-12-30 18:02:32:736 Node002, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:32:736 Node002,     Neighbors of this node are:
+2012-12-30 18:02:32:737 Node002,     Node 1
+2012-12-30 18:02:32:737 Node002,     Node 6
+2012-12-30 18:02:32:737 Node002,     Node 8
+2012-12-30 18:02:32:737 Node002,     Node 10
+2012-12-30 18:02:32:737 Node002,   Expected reply was received
+2012-12-30 18:02:32:737 Node002,   Message transaction complete
+2012-12-30 18:02:32:737 
+2012-12-30 18:02:32:738 Node003, WriteMsg WriteNextMsg m_currentMsg=380394f0
+2012-12-30 18:02:32:738 
+2012-12-30 18:02:32:738 Node003, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=3): 0x01, 0x07, 0x00, 0x80, 0x03, 0x00, 0x00, 0x03, 0x78
+2012-12-30 18:02:32:740 Node003,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:32:743 Node003,   Received: 0x01, 0x20, 0x01, 0x80, 0x81, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xdc
+2012-12-30 18:02:32:744 
+2012-12-30 18:02:32:744 Node003, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:32:744 Node003,     Neighbors of this node are:
+2012-12-30 18:02:32:744 Node003,     Node 1
+2012-12-30 18:02:32:744 Node003,     Node 8
+2012-12-30 18:02:32:744 Node003,     Node 9
+2012-12-30 18:02:32:745 Node003,     Node 10
+2012-12-30 18:02:32:745 Node003,   Expected reply was received
+2012-12-30 18:02:32:745 Node003,   Message transaction complete
+2012-12-30 18:02:32:745 
+2012-12-30 18:02:32:745 Node006, WriteMsg WriteNextMsg m_currentMsg=3803fe10
+2012-12-30 18:02:32:745 
+2012-12-30 18:02:32:745 Node006, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=6): 0x01, 0x07, 0x00, 0x80, 0x06, 0x00, 0x00, 0x03, 0x7d
+2012-12-30 18:02:32:747 Node006,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:32:751 Node006,   Received: 0x01, 0x20, 0x01, 0x80, 0x83, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xdf
+2012-12-30 18:02:32:751 
+2012-12-30 18:02:32:752 Node006, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:32:752 Node006,     Neighbors of this node are:
+2012-12-30 18:02:32:752 Node006,     Node 1
+2012-12-30 18:02:32:752 Node006,     Node 2
+2012-12-30 18:02:32:752 Node006,     Node 8
+2012-12-30 18:02:32:752 Node006,     Node 10
+2012-12-30 18:02:32:753 Node006,   Expected reply was received
+2012-12-30 18:02:32:753 Node006,   Message transaction complete
+2012-12-30 18:02:32:753 
+2012-12-30 18:02:32:753 Node008, WriteMsg WriteNextMsg m_currentMsg=3803f250
+2012-12-30 18:02:32:753 
+2012-12-30 18:02:32:753 Node008, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=8): 0x01, 0x07, 0x00, 0x80, 0x08, 0x00, 0x00, 0x03, 0x73
+2012-12-30 18:02:32:755 Node008,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:32:759 Node008,   Received: 0x01, 0x20, 0x01, 0x80, 0x27, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7a
+2012-12-30 18:02:32:759 
+2012-12-30 18:02:32:760 Node008, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:32:760 Node008,     Neighbors of this node are:
+2012-12-30 18:02:32:760 Node008,     Node 1
+2012-12-30 18:02:32:760 Node008,     Node 2
+2012-12-30 18:02:32:760 Node008,     Node 3
+2012-12-30 18:02:32:760 Node008,     Node 6
+2012-12-30 18:02:32:760 Node008,     Node 9
+2012-12-30 18:02:32:761 Node008,     Node 10
+2012-12-30 18:02:32:761 Node008,   Expected reply was received
+2012-12-30 18:02:32:761 Node008,   Message transaction complete
+2012-12-30 18:02:32:761 
+2012-12-30 18:02:32:761 Node009, WriteMsg WriteNextMsg m_currentMsg=380409b0
+2012-12-30 18:02:32:761 
+2012-12-30 18:02:32:761 Node009, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=9): 0x01, 0x07, 0x00, 0x80, 0x09, 0x00, 0x00, 0x03, 0x72
+2012-12-30 18:02:32:763 Node009,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:32:767 Node009,   Received: 0x01, 0x20, 0x01, 0x80, 0x85, 0x12, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xc9
+2012-12-30 18:02:32:767 
+2012-12-30 18:02:32:767 Node009, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:32:768 Node009,     Neighbors of this node are:
+2012-12-30 18:02:32:768 Node009,     Node 1
+2012-12-30 18:02:32:768 Node009,     Node 3
+2012-12-30 18:02:32:768 Node009,     Node 8
+2012-12-30 18:02:32:768 Node009,     Node 10
+2012-12-30 18:02:32:768 Node009,     Node 13
+2012-12-30 18:02:32:768 Node009,   Expected reply was received
+2012-12-30 18:02:32:768 Node009,   Message transaction complete
+2012-12-30 18:02:32:769 
+2012-12-30 18:02:32:769 Node010, WriteMsg WriteNextMsg m_currentMsg=38045de0
+2012-12-30 18:02:32:769 
+2012-12-30 18:02:32:769 Node010, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=10): 0x01, 0x07, 0x00, 0x80, 0x0a, 0x00, 0x00, 0x03, 0x71
+2012-12-30 18:02:32:771 Node010,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:32:775 Node010,   Received: 0x01, 0x20, 0x01, 0x80, 0xa7, 0x15, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xec
+2012-12-30 18:02:32:775 
+2012-12-30 18:02:32:775 Node010, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:32:775 Node010,     Neighbors of this node are:
+2012-12-30 18:02:32:776 Node010,     Node 1
+2012-12-30 18:02:32:776 Node010,     Node 2
+2012-12-30 18:02:32:776 Node010,     Node 3
+2012-12-30 18:02:32:776 Node010,     Node 6
+2012-12-30 18:02:32:776 Node010,     Node 8
+2012-12-30 18:02:32:776 Node010,     Node 9
+2012-12-30 18:02:32:776 Node010,     Node 11
+2012-12-30 18:02:32:777 Node010,     Node 13
+2012-12-30 18:02:32:777 Node010,   Expected reply was received
+2012-12-30 18:02:32:777 Node010,   Message transaction complete
+2012-12-30 18:02:32:777 
+2012-12-30 18:02:32:777 Node011, WriteMsg WriteNextMsg m_currentMsg=38042cd0
+2012-12-30 18:02:32:777 
+2012-12-30 18:02:32:778 Node011, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=11): 0x01, 0x07, 0x00, 0x80, 0x0b, 0x00, 0x00, 0x03, 0x70
+2012-12-30 18:02:32:779 Node011,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:32:783 Node011,   Received: 0x01, 0x20, 0x01, 0x80, 0x01, 0x32, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x6d
+2012-12-30 18:02:32:784 
+2012-12-30 18:02:32:784 Node011, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:32:784 Node011,     Neighbors of this node are:
+2012-12-30 18:02:32:784 Node011,     Node 1
+2012-12-30 18:02:32:784 Node011,     Node 10
+2012-12-30 18:02:32:784 Node011,     Node 13
+2012-12-30 18:02:32:784 Node011,     Node 14
+2012-12-30 18:02:32:785 Node011,   Expected reply was received
+2012-12-30 18:02:32:785 Node011,   Message transaction complete
+2012-12-30 18:02:32:785 
+2012-12-30 18:02:32:785 Node014, WriteMsg WriteNextMsg m_currentMsg=380592d0
+2012-12-30 18:02:32:785 
+2012-12-30 18:02:32:785 Node014, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=14): 0x01, 0x07, 0x00, 0x80, 0x0e, 0x00, 0x00, 0x03, 0x75
+2012-12-30 18:02:32:787 Node014,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:32:791 Node014,   Received: 0x01, 0x20, 0x01, 0x80, 0x01, 0x14, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x4b
+2012-12-30 18:02:32:791 
+2012-12-30 18:02:32:791 Node014, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:32:791 Node014,     Neighbors of this node are:
+2012-12-30 18:02:32:792 Node014,     Node 1
+2012-12-30 18:02:32:792 Node014,     Node 11
+2012-12-30 18:02:32:792 Node014,     Node 13
+2012-12-30 18:02:32:792 Node014,   Expected reply was received
+2012-12-30 18:02:32:792 Node014,   Message transaction complete
+2012-12-30 18:02:32:792 
+2012-12-30 18:02:32:793 Node013, WriteMsg WriteNextMsg m_currentMsg=380590f0
+2012-12-30 18:02:32:793 
+2012-12-30 18:02:32:793 Node013, Sending command (Callback ID=0x02, Expected Reply=0x04) - Get Associations (Node=13): 0x01, 0x0a, 0x00, 0x13, 0x0d, 0x03, 0x85, 0x02, 0x01, 0x05, 0x02, 0x69
+2012-12-30 18:02:32:795 Node013,   ACK received CallbackId 0x02 Reply 0x04
+2012-12-30 18:02:32:797 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:32:797 Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:34:794 Node013, WriteMsg Wait Timeout m_currentMsg=380590f0
+2012-12-30 18:02:34:794 
+2012-12-30 18:02:34:794 Node013, Sending command (Attempt 2, Callback ID=0x02, Expected Reply=0x04) - Get Associations (Node=13): 0x01, 0x0a, 0x00, 0x13, 0x0d, 0x03, 0x85, 0x02, 0x01, 0x05, 0x02, 0x69
+2012-12-30 18:02:34:796 Node013,   ACK received CallbackId 0x02 Reply 0x04
+2012-12-30 18:02:34:799 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:34:799 Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:35:292 Node013,   Received: 0x01, 0x05, 0x00, 0x13, 0x02, 0x00, 0xeb
+2012-12-30 18:02:35:293 Node013,   ZW_SEND_DATA Request with callback ID 0x02 received (expected 0x02)
+2012-12-30 18:02:35:450 Node013,   Received: 0x01, 0x0c, 0x00, 0x04, 0x00, 0x0d, 0x06, 0x85, 0x03, 0x01, 0x05, 0x00, 0x01, 0x7f
+2012-12-30 18:02:35:450 
+2012-12-30 18:02:35:450 Node013, Received Association report from node 13, group 1, containing 1 associations
+2012-12-30 18:02:35:451 Node013,   The group contains:
+2012-12-30 18:02:35:451 Node013,     Node 1
+2012-12-30 18:02:35:451 Node013, Get Associations for group 2 of node 13
+2012-12-30 18:02:35:451 Node013, Queuing command: Get Associations (Node=13): 0x01, 0x0a, 0x00, 0x13, 0x0d, 0x03, 0x85, 0x02, 0x02, 0x05, 0x03, 0x6b
+2012-12-30 18:02:35:451 Node013,   Expected reply and command class was received
+2012-12-30 18:02:35:451 Node013,   Message transaction complete
+2012-12-30 18:02:35:451 
+2012-12-30 18:02:35:452 Node013, WriteMsg WriteNextMsg m_currentMsg=380394f0
+2012-12-30 18:02:35:452 
+2012-12-30 18:02:35:452 Node013, Sending command (Callback ID=0x03, Expected Reply=0x04) - Get Associations (Node=13): 0x01, 0x0a, 0x00, 0x13, 0x0d, 0x03, 0x85, 0x02, 0x02, 0x05, 0x03, 0x6b
+2012-12-30 18:02:35:454 Node013,   ACK received CallbackId 0x03 Reply 0x04
+2012-12-30 18:02:35:455 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:02:35:455 Node013, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:02:37:452 Node013, WriteMsg Wait Timeout m_currentMsg=380394f0
+2012-12-30 18:02:37:453 
+2012-12-30 18:02:37:453 Node013, Sending command (Attempt 2, Callback ID=0x03, Expected Reply=0x04) - Get Associations (Node=13): 0x01, 0x0a, 0x00, 0x13, 0x0d, 0x03, 0x85, 0x02, 0x02, 0x05, 0x03, 0x6b
+2012-12-30 18:02:37:455 Node013,   ACK received CallbackId 0x03 Reply 0x04
+2012-12-30 18:02:37:456 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:02:37:456 Node013, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:02:38:977 Node013,   Received: 0x01, 0x05, 0x00, 0x47, 0x01, 0x02, 0xbe
+2012-12-30 18:02:38:977 
+2012-12-30 18:02:38:978 Node013, WARNING: Received reply to FUNC_ID_ZW_DELETE_RETURN_ROUTE for node 13 - FAILED: Network busy
+2012-12-30 18:02:39:454 Node013, WriteMsg Wait Timeout m_currentMsg=380394f0
+2012-12-30 18:02:39:454 
+2012-12-30 18:02:39:454 Node013, Sending command (Attempt 3, Callback ID=0x03, Expected Reply=0x04) - Get Associations (Node=13): 0x01, 0x0a, 0x00, 0x13, 0x0d, 0x03, 0x85, 0x02, 0x02, 0x05, 0x03, 0x6b
+2012-12-30 18:02:39:456 Node013,   ACK received CallbackId 0x03 Reply 0x04
+2012-12-30 18:02:39:458 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:39:458 Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:41:455 Node013, WriteMsg Wait Timeout m_currentMsg=380394f0
+2012-12-30 18:02:41:455 Node013, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:02:41:455 Node001, Query Stage Complete (Neighbors)
+2012-12-30 18:02:41:456 Node001, QueryStage_Session
+2012-12-30 18:02:41:456 Node001, QueryStage_Dynamic
+2012-12-30 18:02:41:456 Node001, QueryStage_Configuration
+2012-12-30 18:02:41:456 Node001, QueryStage_Complete
+2012-12-30 18:02:41:456 Node002, Query Stage Complete (Neighbors)
+2012-12-30 18:02:41:456 Node002, QueryStage_Session
+2012-12-30 18:02:41:457 Node002, QueryStage_Dynamic
+2012-12-30 18:02:41:457 Node002, Queuing command: BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x05, 0x04, 0xc6
+2012-12-30 18:02:41:457 Node002, Queuing command: SwitchMultilevelCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x26, 0x02, 0x05, 0x05, 0xc1
+2012-12-30 18:02:41:457 Node002, Queuing Command: Query Stage Complete (Dynamic)
+2012-12-30 18:02:41:457 Node002, WriteMsg WriteNextMsg m_currentMsg=3803e6c0
+2012-12-30 18:02:41:457 
+2012-12-30 18:02:41:457 Node002, Sending command (Callback ID=0x04, Expected Reply=0x04) - BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x05, 0x04, 0xc6
+2012-12-30 18:02:41:460 Node002,   ACK received CallbackId 0x04 Reply 0x04
+2012-12-30 18:02:41:460 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:02:41:460 Node002, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:02:42:193 Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x04, 0x00, 0xed
+2012-12-30 18:02:42:193 Node002,   ZW_SEND_DATA Request with callback ID 0x04 received (expected 0x04)
+2012-12-30 18:02:43:458 Node002, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:02:43:458 
+2012-12-30 18:02:43:458 Node002, Sending command (Attempt 2, Callback ID=0x04, Expected Reply=0x04) - BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x05, 0x04, 0xc6
+2012-12-30 18:02:43:460 Node002,   ACK received CallbackId 0x04 Reply 0x04
+2012-12-30 18:02:43:462 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:43:462 Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:45:459 Node002, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:02:45:460 
+2012-12-30 18:02:45:460 Node002, Sending command (Attempt 3, Callback ID=0x04, Expected Reply=0x04) - BasicCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x20, 0x02, 0x05, 0x04, 0xc6
+2012-12-30 18:02:45:462 Node002,   ACK received CallbackId 0x04 Reply 0x04
+2012-12-30 18:02:45:464 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:45:464 Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:47:461 Node002, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:02:47:461 Node002, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:02:47:461 Node002, WriteMsg WriteNextMsg m_currentMsg=380394f0
+2012-12-30 18:02:47:461 
+2012-12-30 18:02:47:461 Node002, Sending command (Callback ID=0x05, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x26, 0x02, 0x05, 0x05, 0xc1
+2012-12-30 18:02:47:464 Node002,   ACK received CallbackId 0x05 Reply 0x04
+2012-12-30 18:02:47:464 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:02:47:464 Node002, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:02:48:583 Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x05, 0x00, 0xec
+2012-12-30 18:02:48:584 Node002,   ZW_SEND_DATA Request with callback ID 0x05 received (expected 0x05)
+2012-12-30 18:02:49:462 Node002, WriteMsg Wait Timeout m_currentMsg=380394f0
+2012-12-30 18:02:49:462 
+2012-12-30 18:02:49:463 Node002, Sending command (Attempt 2, Callback ID=0x05, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=2): 0x01, 0x09, 0x00, 0x13, 0x02, 0x02, 0x26, 0x02, 0x05, 0x05, 0xc1
+2012-12-30 18:02:49:465 Node002,   ACK received CallbackId 0x05 Reply 0x04
+2012-12-30 18:02:49:467 Node002,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:49:467 Node002,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:49:630 Node002,   Received: 0x01, 0x05, 0x00, 0x13, 0x05, 0x00, 0xec
+2012-12-30 18:02:49:631 Node002,   ZW_SEND_DATA Request with callback ID 0x05 received (expected 0x05)
+2012-12-30 18:02:49:856 Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x26, 0x03, 0x00, 0xd6
+2012-12-30 18:02:49:856 
+2012-12-30 18:02:49:856 Node002, Received SwitchMultiLevel report: level=0
+2012-12-30 18:02:49:857 Node002, Initial read of value
+2012-12-30 18:02:49:857 Node002,   Expected reply and command class was received
+2012-12-30 18:02:49:857 Node002,   Message transaction complete
+2012-12-30 18:02:49:857 
+2012-12-30 18:02:49:857 Node003, Query Stage Complete (Neighbors)
+2012-12-30 18:02:49:857 Node003, QueryStage_Session
+2012-12-30 18:02:49:858 Node003, Queuing command: WakeUpCmd_IntervalGet (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x84, 0x05, 0x05, 0x06, 0x66
+2012-12-30 18:02:49:858 Node003, Queuing Command: Query Stage Complete (Session)
+2012-12-30 18:02:49:858 Node006, Query Stage Complete (Neighbors)
+2012-12-30 18:02:49:858 Node006, QueryStage_Session
+2012-12-30 18:02:49:858 Node006, Queuing command: SwitchAllCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x27, 0x02, 0x05, 0x07, 0xc6
+2012-12-30 18:02:49:858 Node006, Queuing command: ProtectionCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x75, 0x02, 0x05, 0x08, 0x9b
+2012-12-30 18:02:49:858 Node006, Queuing Command: Query Stage Complete (Session)
+2012-12-30 18:02:49:859 Node008, Query Stage Complete (Neighbors)
+2012-12-30 18:02:49:859 Node008, QueryStage_Session
+2012-12-30 18:02:49:859 Node008, QueryStage_Dynamic
+2012-12-30 18:02:49:859 Node008, Queuing command: BasicCmd_Get (Node=8): 0x01, 0x09, 0x00, 0x13, 0x08, 0x02, 0x20, 0x02, 0x05, 0x09, 0xc1
+2012-12-30 18:02:49:859 Node008, Queuing command: SwitchBinaryCmd_Get (Node=8): 0x01, 0x09, 0x00, 0x13, 0x08, 0x02, 0x25, 0x02, 0x05, 0x0a, 0xc7
+2012-12-30 18:02:49:859 Node008, Queuing Command: Query Stage Complete (Dynamic)
+2012-12-30 18:02:49:859 Node008, WriteMsg WriteNextMsg m_currentMsg=38038490
+2012-12-30 18:02:49:860 
+2012-12-30 18:02:49:860 Node008, Sending command (Callback ID=0x09, Expected Reply=0x04) - BasicCmd_Get (Node=8): 0x01, 0x09, 0x00, 0x13, 0x08, 0x02, 0x20, 0x02, 0x05, 0x09, 0xc1
+2012-12-30 18:02:49:862 Node008,   ACK received CallbackId 0x09 Reply 0x04
+2012-12-30 18:02:49:863 Node008,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:02:49:863 Node008, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:02:51:745 Node008,   Received: 0x01, 0x05, 0x00, 0x13, 0x09, 0x00, 0xe0
+2012-12-30 18:02:51:745 Node008,   ZW_SEND_DATA Request with callback ID 0x09 received (expected 0x09)
+2012-12-30 18:02:51:859 Node008, WriteMsg Wait Timeout m_currentMsg=38038490
+2012-12-30 18:02:51:860 
+2012-12-30 18:02:51:860 Node008, Sending command (Attempt 2, Callback ID=0x09, Expected Reply=0x04) - BasicCmd_Get (Node=8): 0x01, 0x09, 0x00, 0x13, 0x08, 0x02, 0x20, 0x02, 0x05, 0x09, 0xc1
+2012-12-30 18:02:51:862 Node008,   ACK received CallbackId 0x09 Reply 0x04
+2012-12-30 18:02:51:864 Node008,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:51:864 Node008,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:53:861 Node008, WriteMsg Wait Timeout m_currentMsg=38038490
+2012-12-30 18:02:53:861 
+2012-12-30 18:02:53:861 Node008, Sending command (Attempt 3, Callback ID=0x09, Expected Reply=0x04) - BasicCmd_Get (Node=8): 0x01, 0x09, 0x00, 0x13, 0x08, 0x02, 0x20, 0x02, 0x05, 0x09, 0xc1
+2012-12-30 18:02:53:864 Node008,   ACK received CallbackId 0x09 Reply 0x04
+2012-12-30 18:02:53:864 Node008,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:02:53:864 Node008, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:02:53:910 Node008,   Received: 0x01, 0x05, 0x00, 0x13, 0x09, 0x00, 0xe0
+2012-12-30 18:02:53:910 Node008,   ZW_SEND_DATA Request with callback ID 0x09 received (expected 0x09)
+2012-12-30 18:02:54:035 Node002,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x02, 0x03, 0x20, 0x03, 0x00, 0xd0
+2012-12-30 18:02:54:035 
+2012-12-30 18:02:54:035 Node002, Received Basic report from node 2: level=0
+2012-12-30 18:02:54:035 Node002, Initial read of value
+2012-12-30 18:02:54:096 Node008,   Received: 0x01, 0x05, 0x00, 0x13, 0x09, 0x00, 0xe0
+2012-12-30 18:02:54:096 Node008,   ZW_SEND_DATA Request with callback ID 0x09 received (expected 0x00)
+2012-12-30 18:02:54:097 Node008, WARNING: Unexpected Callback ID received
+2012-12-30 18:02:54:235 Node008,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x08, 0x03, 0x20, 0x03, 0x00, 0xda
+2012-12-30 18:02:54:235 
+2012-12-30 18:02:54:235 Node008, Received Basic report from node 8: level=0
+2012-12-30 18:02:54:235 Node008, Initial read of value
+2012-12-30 18:02:54:235 Node008,   Expected reply and command class was received
+2012-12-30 18:02:54:236 Node008,   Message transaction complete
+2012-12-30 18:02:54:236 
+2012-12-30 18:02:54:236 Node008, WriteMsg WriteNextMsg m_currentMsg=380394f0
+2012-12-30 18:02:54:236 
+2012-12-30 18:02:54:236 Node008, Sending command (Callback ID=0x0a, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=8): 0x01, 0x09, 0x00, 0x13, 0x08, 0x02, 0x25, 0x02, 0x05, 0x0a, 0xc7
+2012-12-30 18:02:54:238 Node008,   ACK received CallbackId 0x0a Reply 0x04
+2012-12-30 18:02:54:241 Node008,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:54:241 Node008,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:54:623 Node008,   Received: 0x01, 0x05, 0x00, 0x13, 0x0a, 0x00, 0xe3
+2012-12-30 18:02:54:623 Node008,   ZW_SEND_DATA Request with callback ID 0x0a received (expected 0x0a)
+2012-12-30 18:02:54:641 Node008,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x08, 0x03, 0x25, 0x03, 0x00, 0xdf
+2012-12-30 18:02:54:641 
+2012-12-30 18:02:54:641 Node008, Received SwitchBinary report from node 8: level=Off
+2012-12-30 18:02:54:642 Node008, Initial read of value
+2012-12-30 18:02:54:642 Node008,   Expected reply and command class was received
+2012-12-30 18:02:54:642 Node008,   Message transaction complete
+2012-12-30 18:02:54:642 
+2012-12-30 18:02:54:642 Node009, Query Stage Complete (Neighbors)
+2012-12-30 18:02:54:642 Node009, QueryStage_Session
+2012-12-30 18:02:54:643 Node009, Queuing command: SwitchAllCmd_Get (Node=9): 0x01, 0x09, 0x00, 0x13, 0x09, 0x02, 0x27, 0x02, 0x05, 0x0b, 0xc5
+2012-12-30 18:02:54:643 Node009, Queuing Command: Query Stage Complete (Session)
+2012-12-30 18:02:54:643 Node010, Query Stage Complete (Neighbors)
+2012-12-30 18:02:54:643 Node010, QueryStage_Session
+2012-12-30 18:02:54:643 Node010, QueryStage_Dynamic
+2012-12-30 18:02:54:643 Node010, Queuing command: BasicCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x20, 0x02, 0x05, 0x0c, 0xc6
+2012-12-30 18:02:54:643 Node010, Queuing command: SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x05, 0x0d, 0xc1
+2012-12-30 18:02:54:644 Node010, Queuing Command: Query Stage Complete (Dynamic)
+2012-12-30 18:02:54:644 Node010, WriteMsg WriteNextMsg m_currentMsg=380394f0
+2012-12-30 18:02:54:644 
+2012-12-30 18:02:54:644 Node010, Sending command (Callback ID=0x0c, Expected Reply=0x04) - BasicCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x20, 0x02, 0x05, 0x0c, 0xc6
+2012-12-30 18:02:54:646 Node010,   ACK received CallbackId 0x0c Reply 0x04
+2012-12-30 18:02:54:649 Node010,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:54:649 Node010,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:54:701 Node010,   Received: 0x01, 0x05, 0x00, 0x13, 0x0c, 0x00, 0xe5
+2012-12-30 18:02:54:702 Node010,   ZW_SEND_DATA Request with callback ID 0x0c received (expected 0x0c)
+2012-12-30 18:02:54:720 Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0a, 0x03, 0x20, 0x03, 0x31, 0xe9
+2012-12-30 18:02:54:720 
+2012-12-30 18:02:54:720 Node010, Received Basic report from node 10: level=49
+2012-12-30 18:02:54:720 Node010, Initial read of value
+2012-12-30 18:02:54:721 Node010,   Expected reply and command class was received
+2012-12-30 18:02:54:721 Node010,   Message transaction complete
+2012-12-30 18:02:54:721 
+2012-12-30 18:02:54:721 Node010, WriteMsg WriteNextMsg m_currentMsg=380019b0
+2012-12-30 18:02:54:721 
+2012-12-30 18:02:54:721 Node010, Sending command (Callback ID=0x0d, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=10): 0x01, 0x09, 0x00, 0x13, 0x0a, 0x02, 0x26, 0x02, 0x05, 0x0d, 0xc1
+2012-12-30 18:02:54:723 Node010,   ACK received CallbackId 0x0d Reply 0x04
+2012-12-30 18:02:54:726 Node010,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:54:726 Node010,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:54:780 Node010,   Received: 0x01, 0x05, 0x00, 0x13, 0x0d, 0x00, 0xe4
+2012-12-30 18:02:54:781 Node010,   ZW_SEND_DATA Request with callback ID 0x0d received (expected 0x0d)
+2012-12-30 18:02:54:799 Node010,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0a, 0x03, 0x26, 0x03, 0x31, 0xef
+2012-12-30 18:02:54:799 
+2012-12-30 18:02:54:799 Node010, Received SwitchMultiLevel report: level=49
+2012-12-30 18:02:54:799 Node010, Initial read of value
+2012-12-30 18:02:54:800 Node010,   Expected reply and command class was received
+2012-12-30 18:02:54:800 Node010,   Message transaction complete
+2012-12-30 18:02:54:800 
+2012-12-30 18:02:54:800 Node011, Query Stage Complete (Neighbors)
+2012-12-30 18:02:54:800 Node011, QueryStage_Session
+2012-12-30 18:02:54:800 Node011, Queuing command: SwitchAllCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x27, 0x02, 0x05, 0x0e, 0xc2
+2012-12-30 18:02:54:800 Node011, Queuing Command: Query Stage Complete (Session)
+2012-12-30 18:02:54:801 Node013, Query Stage Complete (Associations)
+2012-12-30 18:02:54:801 Node013, QueryStage_Neighbors
+2012-12-30 18:02:54:801 Requesting routing info (neighbor list) for Node 13
+2012-12-30 18:02:54:801 Node013, Queuing command: Get Routing Info (Node=13): 0x01, 0x07, 0x00, 0x80, 0x0d, 0x00, 0x00, 0x03, 0x76
+2012-12-30 18:02:54:801 Node013, Queuing Command: Query Stage Complete (Neighbors)
+2012-12-30 18:02:54:801 Node013, WriteMsg WriteNextMsg m_currentMsg=380019b0
+2012-12-30 18:02:54:801 
+2012-12-30 18:02:54:802 Node013, Sending command (Callback ID=0x00, Expected Reply=0x80) - Get Routing Info (Node=13): 0x01, 0x07, 0x00, 0x80, 0x0d, 0x00, 0x00, 0x03, 0x76
+2012-12-30 18:02:54:803 Node013,   ACK received CallbackId 0x00 Reply 0x80
+2012-12-30 18:02:54:807 Node013,   Received: 0x01, 0x20, 0x01, 0x80, 0x01, 0x27, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x78
+2012-12-30 18:02:54:807 
+2012-12-30 18:02:54:807 Node013, Received reply to FUNC_ID_ZW_GET_ROUTING_INFO
+2012-12-30 18:02:54:808 Node013,     Neighbors of this node are:
+2012-12-30 18:02:54:808 Node013,     Node 1
+2012-12-30 18:02:54:808 Node013,     Node 9
+2012-12-30 18:02:54:808 Node013,     Node 10
+2012-12-30 18:02:54:808 Node013,     Node 11
+2012-12-30 18:02:54:808 Node013,     Node 14
+2012-12-30 18:02:54:808 Node013,   Expected reply was received
+2012-12-30 18:02:54:808 Node013,   Message transaction complete
+2012-12-30 18:02:54:808 
+2012-12-30 18:02:54:809 Node014, Query Stage Complete (Neighbors)
+2012-12-30 18:02:54:809 Node014, QueryStage_Session
+2012-12-30 18:02:54:809 Node014, QueryStage_Dynamic
+2012-12-30 18:02:54:809 Node014, Queuing command: BasicCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x20, 0x02, 0x05, 0x0f, 0xc1
+2012-12-30 18:02:54:809 Node014, Queuing command: SwitchMultilevelCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x26, 0x02, 0x05, 0x10, 0xd8
+2012-12-30 18:02:54:810 Node014, Queuing Command: Query Stage Complete (Dynamic)
+2012-12-30 18:02:54:810 Node014, WriteMsg WriteNextMsg m_currentMsg=380019b0
+2012-12-30 18:02:54:810 
+2012-12-30 18:02:54:810 Node014, Sending command (Callback ID=0x0f, Expected Reply=0x04) - BasicCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x20, 0x02, 0x05, 0x0f, 0xc1
+2012-12-30 18:02:54:812 Node014,   ACK received CallbackId 0x0f Reply 0x04
+2012-12-30 18:02:54:815 Node014,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:54:815 Node014,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:56:811 Node014, WriteMsg Wait Timeout m_currentMsg=380019b0
+2012-12-30 18:02:56:812 
+2012-12-30 18:02:56:812 Node014, Sending command (Attempt 2, Callback ID=0x0f, Expected Reply=0x04) - BasicCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x20, 0x02, 0x05, 0x0f, 0xc1
+2012-12-30 18:02:56:814 Node014,   ACK received CallbackId 0x0f Reply 0x04
+2012-12-30 18:02:56:816 Node014,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:56:816 Node014,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:02:58:813 Node014, WriteMsg Wait Timeout m_currentMsg=380019b0
+2012-12-30 18:02:58:813 
+2012-12-30 18:02:58:813 Node014, Sending command (Attempt 3, Callback ID=0x0f, Expected Reply=0x04) - BasicCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x20, 0x02, 0x05, 0x0f, 0xc1
+2012-12-30 18:02:58:815 Node014,   ACK received CallbackId 0x0f Reply 0x04
+2012-12-30 18:02:58:818 Node014,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:02:58:818 Node014,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:00:814 Node014, WriteMsg Wait Timeout m_currentMsg=380019b0
+2012-12-30 18:03:00:814 Node014, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:03:00:815 Node014, WriteMsg WriteNextMsg m_currentMsg=3803d6a0
+2012-12-30 18:03:00:815 
+2012-12-30 18:03:00:815 Node014, Sending command (Callback ID=0x10, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x26, 0x02, 0x05, 0x10, 0xd8
+2012-12-30 18:03:00:817 Node014,   ACK received CallbackId 0x10 Reply 0x04
+2012-12-30 18:03:00:818 Node014,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:00:818 Node014, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:02:494 Node014,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0e, 0x03, 0x20, 0x03, 0x00, 0xdc
+2012-12-30 18:03:02:495 
+2012-12-30 18:03:02:495 Node014, Received Basic report from node 14: level=0
+2012-12-30 18:03:02:495 Node014, Initial read of value
+2012-12-30 18:03:02:815 Node014, WriteMsg Wait Timeout m_currentMsg=3803d6a0
+2012-12-30 18:03:02:816 
+2012-12-30 18:03:02:816 Node014, Sending command (Attempt 2, Callback ID=0x10, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x26, 0x02, 0x05, 0x10, 0xd8
+2012-12-30 18:03:02:818 Node014,   ACK received CallbackId 0x10 Reply 0x04
+2012-12-30 18:03:02:819 Node014,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:02:819 Node014, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:04:582 Node014,   Received: 0x01, 0x05, 0x00, 0x13, 0x10, 0x00, 0xf9
+2012-12-30 18:03:04:583 Node014,   ZW_SEND_DATA Request with callback ID 0x10 received (expected 0x10)
+2012-12-30 18:03:04:816 Node014, WriteMsg Wait Timeout m_currentMsg=3803d6a0
+2012-12-30 18:03:04:816 
+2012-12-30 18:03:04:816 Node014, Sending command (Attempt 3, Callback ID=0x10, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=14): 0x01, 0x09, 0x00, 0x13, 0x0e, 0x02, 0x26, 0x02, 0x05, 0x10, 0xd8
+2012-12-30 18:03:04:818 Node014,   ACK received CallbackId 0x10 Reply 0x04
+2012-12-30 18:03:04:820 Node014,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:04:821 Node014,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:05:014 Node014,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0e, 0x03, 0x26, 0x03, 0x00, 0xda
+2012-12-30 18:03:05:014 
+2012-12-30 18:03:05:014 Node014, Received SwitchMultiLevel report: level=0
+2012-12-30 18:03:05:014 Node014, Initial read of value
+2012-12-30 18:03:06:816 Node014, WriteMsg Wait Timeout m_currentMsg=3803d6a0
+2012-12-30 18:03:06:816 Node014, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:03:06:817 Node002, Query Stage Complete (Dynamic)
+2012-12-30 18:03:06:817 Node002, QueryStage_Configuration
+2012-12-30 18:03:06:817 Node002, QueryStage_Complete
+2012-12-30 18:03:06:817 Node003, WriteMsg WriteNextMsg m_currentMsg=3803e6c0
+2012-12-30 18:03:06:817 
+2012-12-30 18:03:06:817 Node003, Sending command (Callback ID=0x06, Expected Reply=0x04) - WakeUpCmd_IntervalGet (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x84, 0x05, 0x05, 0x06, 0x66
+2012-12-30 18:03:06:820 Node003,   ACK received CallbackId 0x06 Reply 0x04
+2012-12-30 18:03:06:820 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:06:821 Node003, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:08:767 Node003,   Received: 0x01, 0x05, 0x00, 0x13, 0x06, 0x00, 0xef
+2012-12-30 18:03:08:767 Node003,   ZW_SEND_DATA Request with callback ID 0x06 received (expected 0x06)
+2012-12-30 18:03:08:817 Node003, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:03:08:817 
+2012-12-30 18:03:08:817 Node003, Sending command (Attempt 2, Callback ID=0x06, Expected Reply=0x04) - WakeUpCmd_IntervalGet (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x84, 0x05, 0x05, 0x06, 0x66
+2012-12-30 18:03:08:819 Node003,   ACK received CallbackId 0x06 Reply 0x04
+2012-12-30 18:03:08:822 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:08:822 Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:10:819 Node003, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:03:10:819 
+2012-12-30 18:03:10:819 Node003, Sending command (Attempt 3, Callback ID=0x06, Expected Reply=0x04) - WakeUpCmd_IntervalGet (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x84, 0x05, 0x05, 0x06, 0x66
+2012-12-30 18:03:10:822 Node003,   ACK received CallbackId 0x06 Reply 0x04
+2012-12-30 18:03:10:822 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:10:822 Node003, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:12:820 Node003, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:03:12:821 Node003, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:03:12:821 Node003, Query Stage Complete (Session)
+2012-12-30 18:03:12:821 Node003, QueryStage_Dynamic
+2012-12-30 18:03:12:821 Node003, Queuing command: SensorBinaryCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x30, 0x02, 0x05, 0x11, 0xc2
+2012-12-30 18:03:12:821 Node003, Queuing Command: Query Stage Complete (Dynamic)
+2012-12-30 18:03:12:822 Node003, WriteMsg WriteNextMsg m_currentMsg=3803e6c0
+2012-12-30 18:03:12:822 
+2012-12-30 18:03:12:822 Node003, Sending command (Callback ID=0x11, Expected Reply=0x04) - SensorBinaryCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x30, 0x02, 0x05, 0x11, 0xc2
+2012-12-30 18:03:12:824 Node003,   ACK received CallbackId 0x11 Reply 0x04
+2012-12-30 18:03:12:825 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:12:825 Node003, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:13:808 Node003,   Received: 0x01, 0x05, 0x00, 0x13, 0x11, 0x00, 0xf8
+2012-12-30 18:03:13:808 Node003,   ZW_SEND_DATA Request with callback ID 0x11 received (expected 0x11)
+2012-12-30 18:03:14:161 Node003,   Received: 0x01, 0x05, 0x00, 0x13, 0x11, 0x00, 0xf8
+2012-12-30 18:03:14:161 Node003,   ZW_SEND_DATA Request with callback ID 0x11 received (expected 0x00)
+2012-12-30 18:03:14:161 Node003, WARNING: Unexpected Callback ID received
+2012-12-30 18:03:14:821 Node003, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:03:14:822 
+2012-12-30 18:03:14:822 Node003, Sending command (Attempt 2, Callback ID=0x11, Expected Reply=0x04) - SensorBinaryCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x30, 0x02, 0x05, 0x11, 0xc2
+2012-12-30 18:03:14:824 Node003,   ACK received CallbackId 0x11 Reply 0x04
+2012-12-30 18:03:14:826 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:14:826 Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:16:823 Node003, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:03:16:823 
+2012-12-30 18:03:16:823 Node003, Sending command (Attempt 3, Callback ID=0x11, Expected Reply=0x04) - SensorBinaryCmd_Get (Node=3): 0x01, 0x09, 0x00, 0x13, 0x03, 0x02, 0x30, 0x02, 0x05, 0x11, 0xc2
+2012-12-30 18:03:16:826 Node003,   ACK received CallbackId 0x11 Reply 0x04
+2012-12-30 18:03:16:828 Node003,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:16:828 Node003,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:18:825 Node003, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:03:18:825 Node003, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:03:18:825 Node006, WriteMsg WriteNextMsg m_currentMsg=3803fe10
+2012-12-30 18:03:18:825 
+2012-12-30 18:03:18:826 Node006, Sending command (Callback ID=0x07, Expected Reply=0x04) - SwitchAllCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x27, 0x02, 0x05, 0x07, 0xc6
+2012-12-30 18:03:18:828 Node006,   ACK received CallbackId 0x07 Reply 0x04
+2012-12-30 18:03:18:828 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:18:828 Node006, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:20:827 Node006, WriteMsg Wait Timeout m_currentMsg=3803fe10
+2012-12-30 18:03:20:827 
+2012-12-30 18:03:20:827 Node006, Sending command (Attempt 2, Callback ID=0x07, Expected Reply=0x04) - SwitchAllCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x27, 0x02, 0x05, 0x07, 0xc6
+2012-12-30 18:03:20:830 Node006,   ACK received CallbackId 0x07 Reply 0x04
+2012-12-30 18:03:20:830 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:20:830 Node006, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:22:497 Node006,   Received: 0x01, 0x05, 0x00, 0x13, 0x07, 0x01, 0xef
+2012-12-30 18:03:22:498 Node006,   ZW_SEND_DATA Request with callback ID 0x07 received (expected 0x07)
+2012-12-30 18:03:22:498 Node006, ERROR: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2012-12-30 18:03:22:498 Node006,   WARNING: Device is not a sleeping node - retrying the send.
+2012-12-30 18:03:22:498 Node006,   Expected callbackId was received
+2012-12-30 18:03:22:827 Node006, WriteMsg Wait Timeout m_currentMsg=3803fe10
+2012-12-30 18:03:22:828 
+2012-12-30 18:03:22:828 Node006, Sending command (Attempt 3, Callback ID=0x07, Expected Reply=0x04) - SwitchAllCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x27, 0x02, 0x05, 0x07, 0xc6
+2012-12-30 18:03:22:830 Node006,   ACK received CallbackId 0x07 Reply 0x04
+2012-12-30 18:03:22:833 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:22:833 Node006,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:24:829 Node006, WriteMsg Wait Timeout m_currentMsg=3803fe10
+2012-12-30 18:03:24:829 Node006, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:03:24:830 Node006, WriteMsg WriteNextMsg m_currentMsg=380029f0
+2012-12-30 18:03:24:830 
+2012-12-30 18:03:24:830 Node006, Sending command (Callback ID=0x08, Expected Reply=0x04) - ProtectionCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x75, 0x02, 0x05, 0x08, 0x9b
+2012-12-30 18:03:24:832 Node006,   ACK received CallbackId 0x08 Reply 0x04
+2012-12-30 18:03:24:833 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:24:833 Node006, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:26:831 Node006, WriteMsg Wait Timeout m_currentMsg=380029f0
+2012-12-30 18:03:26:832 
+2012-12-30 18:03:26:832 Node006, Sending command (Attempt 2, Callback ID=0x08, Expected Reply=0x04) - ProtectionCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x75, 0x02, 0x05, 0x08, 0x9b
+2012-12-30 18:03:26:834 Node006,   ACK received CallbackId 0x08 Reply 0x04
+2012-12-30 18:03:26:834 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:26:835 Node006, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:28:833 Node006, WriteMsg Wait Timeout m_currentMsg=380029f0
+2012-12-30 18:03:28:833 
+2012-12-30 18:03:28:833 Node006, Sending command (Attempt 3, Callback ID=0x08, Expected Reply=0x04) - ProtectionCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x75, 0x02, 0x05, 0x08, 0x9b
+2012-12-30 18:03:28:836 Node006,   ACK received CallbackId 0x08 Reply 0x04
+2012-12-30 18:03:28:836 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:28:836 Node006, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:30:658 Node006,   Received: 0x01, 0x05, 0x00, 0x13, 0x08, 0x01, 0xe0
+2012-12-30 18:03:30:658 Node006,   ZW_SEND_DATA Request with callback ID 0x08 received (expected 0x08)
+2012-12-30 18:03:30:658 Node006, ERROR: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2012-12-30 18:03:30:658 Node006,   WARNING: Device is not a sleeping node - retrying the send.
+2012-12-30 18:03:30:659 Node006,   Expected callbackId was received
+2012-12-30 18:03:30:833 Node006, WriteMsg Wait Timeout m_currentMsg=380029f0
+2012-12-30 18:03:30:833 Node006, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:03:30:834 Node006, Query Stage Complete (Session)
+2012-12-30 18:03:30:834 Node006, QueryStage_Dynamic
+2012-12-30 18:03:30:834 Node006, Queuing command: BasicCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x20, 0x02, 0x05, 0x12, 0xd4
+2012-12-30 18:03:30:834 Node006, Queuing command: SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x05, 0x13, 0xd3
+2012-12-30 18:03:30:834 Node006, Queuing Command: Query Stage Complete (Dynamic)
+2012-12-30 18:03:30:834 Node006, WriteMsg WriteNextMsg m_currentMsg=380029f0
+2012-12-30 18:03:30:834 
+2012-12-30 18:03:30:835 Node006, Sending command (Callback ID=0x12, Expected Reply=0x04) - BasicCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x20, 0x02, 0x05, 0x12, 0xd4
+2012-12-30 18:03:30:837 Node006,   ACK received CallbackId 0x12 Reply 0x04
+2012-12-30 18:03:30:839 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:30:839 Node006,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:32:836 Node006, WriteMsg Wait Timeout m_currentMsg=380029f0
+2012-12-30 18:03:32:836 
+2012-12-30 18:03:32:836 Node006, Sending command (Attempt 2, Callback ID=0x12, Expected Reply=0x04) - BasicCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x20, 0x02, 0x05, 0x12, 0xd4
+2012-12-30 18:03:32:839 Node006,   ACK received CallbackId 0x12 Reply 0x04
+2012-12-30 18:03:32:839 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:32:839 Node006, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:34:836 Node006, WriteMsg Wait Timeout m_currentMsg=380029f0
+2012-12-30 18:03:34:837 
+2012-12-30 18:03:34:837 Node006, Sending command (Attempt 3, Callback ID=0x12, Expected Reply=0x04) - BasicCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x20, 0x02, 0x05, 0x12, 0xd4
+2012-12-30 18:03:34:839 Node006,   ACK received CallbackId 0x12 Reply 0x04
+2012-12-30 18:03:34:840 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:34:840 Node006, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:36:838 Node006, WriteMsg Wait Timeout m_currentMsg=380029f0
+2012-12-30 18:03:36:839 Node006, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:03:36:839 Node006, WriteMsg WriteNextMsg m_currentMsg=3803fe10
+2012-12-30 18:03:36:839 
+2012-12-30 18:03:36:839 Node006, Sending command (Callback ID=0x13, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x05, 0x13, 0xd3
+2012-12-30 18:03:36:842 Node006,   ACK received CallbackId 0x13 Reply 0x04
+2012-12-30 18:03:36:842 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:36:842 Node006, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:38:841 Node006, WriteMsg Wait Timeout m_currentMsg=3803fe10
+2012-12-30 18:03:38:841 
+2012-12-30 18:03:38:841 Node006, Sending command (Attempt 2, Callback ID=0x13, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=6): 0x01, 0x09, 0x00, 0x13, 0x06, 0x02, 0x26, 0x02, 0x05, 0x13, 0xd3
+2012-12-30 18:03:38:844 Node006,   ACK received CallbackId 0x13 Reply 0x04
+2012-12-30 18:03:38:844 Node006,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:38:844 Node006, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:39:609 Node006,   Received: 0x01, 0x05, 0x00, 0x13, 0x13, 0x01, 0xfb
+2012-12-30 18:03:39:610 Node006,   ZW_SEND_DATA Request with callback ID 0x13 received (expected 0x13)
+2012-12-30 18:03:39:610 Node006, ERROR: ZW_SEND_DATA failed. No ACK received - device may be asleep.
+2012-12-30 18:03:39:610 Node006,   WARNING: Device is not a sleeping node - retrying the send.
+2012-12-30 18:03:39:610 Node006,   Expected callbackId was received
+2012-12-30 18:03:39:913 Node006,   Received: 0x01, 0x05, 0x00, 0x13, 0x13, 0x00, 0xfa
+2012-12-30 18:03:39:913 Node006,   ZW_SEND_DATA Request with callback ID 0x13 received (expected 0x00)
+2012-12-30 18:03:39:913 Node006, WARNING: Unexpected Callback ID received
+2012-12-30 18:03:40:176 Node006,   Received: 0x01, 0x05, 0x00, 0x13, 0x13, 0x00, 0xfa
+2012-12-30 18:03:40:176 Node006,   ZW_SEND_DATA Request with callback ID 0x13 received (expected 0x00)
+2012-12-30 18:03:40:176 Node006, WARNING: Unexpected Callback ID received
+2012-12-30 18:03:40:282 Node006,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x06, 0x03, 0x26, 0x03, 0x00, 0xd2
+2012-12-30 18:03:40:283 
+2012-12-30 18:03:40:283 Node006, Received SwitchMultiLevel report: level=0
+2012-12-30 18:03:40:283 Node006, Initial read of value
+2012-12-30 18:03:40:283 Node006,   Expected reply and command class was received
+2012-12-30 18:03:40:283 Node006,   Message transaction complete
+2012-12-30 18:03:40:283 
+2012-12-30 18:03:40:284 Node008, Query Stage Complete (Dynamic)
+2012-12-30 18:03:40:284 Node008, QueryStage_Configuration
+2012-12-30 18:03:40:284 Node008, QueryStage_Complete
+2012-12-30 18:03:40:284 Node009, WriteMsg WriteNextMsg m_currentMsg=38038490
+2012-12-30 18:03:40:284 
+2012-12-30 18:03:40:285 Node009, Sending command (Callback ID=0x0b, Expected Reply=0x04) - SwitchAllCmd_Get (Node=9): 0x01, 0x09, 0x00, 0x13, 0x09, 0x02, 0x27, 0x02, 0x05, 0x0b, 0xc5
+2012-12-30 18:03:40:286 Node009,   ACK received CallbackId 0x0b Reply 0x04
+2012-12-30 18:03:40:289 Node009,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:40:289 Node009,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:40:345 Node009,   Received: 0x01, 0x05, 0x00, 0x13, 0x0b, 0x00, 0xe2
+2012-12-30 18:03:40:346 Node009,   ZW_SEND_DATA Request with callback ID 0x0b received (expected 0x0b)
+2012-12-30 18:03:40:368 Node009,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x09, 0x03, 0x27, 0x03, 0xff, 0x23
+2012-12-30 18:03:40:368 
+2012-12-30 18:03:40:369 Node009, Initial read of value
+2012-12-30 18:03:40:369 Node009, Received SwitchAll report from node 9: On and Off Enabled
+2012-12-30 18:03:40:369 Node009,   Expected reply and command class was received
+2012-12-30 18:03:40:369 Node009,   Message transaction complete
+2012-12-30 18:03:40:369 
+2012-12-30 18:03:40:370 Node009, Query Stage Complete (Session)
+2012-12-30 18:03:40:370 Node009, QueryStage_Dynamic
+2012-12-30 18:03:40:370 Node009, Queuing command: BasicCmd_Get (Node=9): 0x01, 0x09, 0x00, 0x13, 0x09, 0x02, 0x20, 0x02, 0x05, 0x14, 0xdd
+2012-12-30 18:03:40:370 Node009, Queuing command: SwitchMultilevelCmd_Get (Node=9): 0x01, 0x09, 0x00, 0x13, 0x09, 0x02, 0x26, 0x02, 0x05, 0x15, 0xda
+2012-12-30 18:03:40:370 Node009, Queuing Command: Query Stage Complete (Dynamic)
+2012-12-30 18:03:40:370 Node009, WriteMsg WriteNextMsg m_currentMsg=3803e6c0
+2012-12-30 18:03:40:370 
+2012-12-30 18:03:40:371 Node009, Sending command (Callback ID=0x14, Expected Reply=0x04) - BasicCmd_Get (Node=9): 0x01, 0x09, 0x00, 0x13, 0x09, 0x02, 0x20, 0x02, 0x05, 0x14, 0xdd
+2012-12-30 18:03:40:372 Node009,   ACK received CallbackId 0x14 Reply 0x04
+2012-12-30 18:03:40:375 Node009,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:40:375 Node009,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:40:431 Node009,   Received: 0x01, 0x05, 0x00, 0x13, 0x14, 0x00, 0xfd
+2012-12-30 18:03:40:431 Node009,   ZW_SEND_DATA Request with callback ID 0x14 received (expected 0x14)
+2012-12-30 18:03:40:454 Node009,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x09, 0x03, 0x20, 0x03, 0x2f, 0xf4
+2012-12-30 18:03:40:454 
+2012-12-30 18:03:40:454 Node009, Received Basic report from node 9: level=47
+2012-12-30 18:03:40:454 Node009, Initial read of value
+2012-12-30 18:03:40:455 Node009,   Expected reply and command class was received
+2012-12-30 18:03:40:455 Node009,   Message transaction complete
+2012-12-30 18:03:40:455 
+2012-12-30 18:03:40:455 Node009, WriteMsg WriteNextMsg m_currentMsg=3803fe10
+2012-12-30 18:03:40:455 
+2012-12-30 18:03:40:455 Node009, Sending command (Callback ID=0x15, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=9): 0x01, 0x09, 0x00, 0x13, 0x09, 0x02, 0x26, 0x02, 0x05, 0x15, 0xda
+2012-12-30 18:03:40:457 Node009,   ACK received CallbackId 0x15 Reply 0x04
+2012-12-30 18:03:40:460 Node009,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:40:460 Node009,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:40:516 Node009,   Received: 0x01, 0x05, 0x00, 0x13, 0x15, 0x00, 0xfc
+2012-12-30 18:03:40:517 Node009,   ZW_SEND_DATA Request with callback ID 0x15 received (expected 0x15)
+2012-12-30 18:03:40:539 Node009,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x09, 0x03, 0x26, 0x03, 0x2f, 0xf2
+2012-12-30 18:03:40:540 
+2012-12-30 18:03:40:540 Node009, Received SwitchMultiLevel report: level=47
+2012-12-30 18:03:40:540 Node009, Initial read of value
+2012-12-30 18:03:40:540 Node009,   Expected reply and command class was received
+2012-12-30 18:03:40:540 Node009,   Message transaction complete
+2012-12-30 18:03:40:540 
+2012-12-30 18:03:40:541 Node010, Query Stage Complete (Dynamic)
+2012-12-30 18:03:40:541 Node010, QueryStage_Configuration
+2012-12-30 18:03:40:541 Node010, QueryStage_Complete
+2012-12-30 18:03:40:541 Node011, WriteMsg WriteNextMsg m_currentMsg=380394f0
+2012-12-30 18:03:40:541 
+2012-12-30 18:03:40:541 Node011, Sending command (Callback ID=0x0e, Expected Reply=0x04) - SwitchAllCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x27, 0x02, 0x05, 0x0e, 0xc2
+2012-12-30 18:03:40:543 Node011,   ACK received CallbackId 0x0e Reply 0x04
+2012-12-30 18:03:40:546 Node011,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:40:547 Node011,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:40:681 Node006,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x06, 0x03, 0x26, 0x03, 0x00, 0xd2
+2012-12-30 18:03:40:682 
+2012-12-30 18:03:40:682 Node006, Received SwitchMultiLevel report: level=0
+2012-12-30 18:03:40:682 Node006, Refreshed Value: old value=0, new value=0, type=uint8
+2012-12-30 18:03:40:682 Node006, Changes to this value are not verified
+2012-12-30 18:03:42:542 Node011, WriteMsg Wait Timeout m_currentMsg=380394f0
+2012-12-30 18:03:42:543 
+2012-12-30 18:03:42:543 Node011, Sending command (Attempt 2, Callback ID=0x0e, Expected Reply=0x04) - SwitchAllCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x27, 0x02, 0x05, 0x0e, 0xc2
+2012-12-30 18:03:42:545 Node011,   ACK received CallbackId 0x0e Reply 0x04
+2012-12-30 18:03:42:547 Node011,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:42:547 Node011,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:43:044 Node011,   Received: 0x01, 0x05, 0x00, 0x13, 0x0e, 0x00, 0xe7
+2012-12-30 18:03:43:045 Node011,   ZW_SEND_DATA Request with callback ID 0x0e received (expected 0x0e)
+2012-12-30 18:03:43:293 Node011,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0b, 0x03, 0x27, 0x03, 0xff, 0x21
+2012-12-30 18:03:43:293 
+2012-12-30 18:03:43:293 Node011, Initial read of value
+2012-12-30 18:03:43:293 Node011, Received SwitchAll report from node 11: On and Off Enabled
+2012-12-30 18:03:43:294 Node011,   Expected reply and command class was received
+2012-12-30 18:03:43:294 Node011,   Message transaction complete
+2012-12-30 18:03:43:294 
+2012-12-30 18:03:43:294 Node011, Query Stage Complete (Session)
+2012-12-30 18:03:43:294 Node011, QueryStage_Dynamic
+2012-12-30 18:03:43:294 Node011, Queuing command: BasicCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x20, 0x02, 0x05, 0x16, 0xdd
+2012-12-30 18:03:43:295 Node011, Queuing command: SwitchBinaryCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x25, 0x02, 0x05, 0x17, 0xd9
+2012-12-30 18:03:43:295 Node011, Queuing Command: Query Stage Complete (Dynamic)
+2012-12-30 18:03:43:295 Node011, WriteMsg WriteNextMsg m_currentMsg=38038490
+2012-12-30 18:03:43:295 
+2012-12-30 18:03:43:295 Node011, Sending command (Callback ID=0x16, Expected Reply=0x04) - BasicCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x20, 0x02, 0x05, 0x16, 0xdd
+2012-12-30 18:03:43:297 Node011,   ACK received CallbackId 0x16 Reply 0x04
+2012-12-30 18:03:43:299 Node011,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:43:299 Node011,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:45:296 Node011, WriteMsg Wait Timeout m_currentMsg=38038490
+2012-12-30 18:03:45:296 
+2012-12-30 18:03:45:296 Node011, Sending command (Attempt 2, Callback ID=0x16, Expected Reply=0x04) - BasicCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x20, 0x02, 0x05, 0x16, 0xdd
+2012-12-30 18:03:45:299 Node011,   ACK received CallbackId 0x16 Reply 0x04
+2012-12-30 18:03:45:299 Node011,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:45:299 Node011, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:46:602 Node011,   Received: 0x01, 0x05, 0x00, 0x13, 0x16, 0x00, 0xff
+2012-12-30 18:03:46:603 Node011,   ZW_SEND_DATA Request with callback ID 0x16 received (expected 0x16)
+2012-12-30 18:03:47:297 Node011, WriteMsg Wait Timeout m_currentMsg=38038490
+2012-12-30 18:03:47:298 
+2012-12-30 18:03:47:298 Node011, Sending command (Attempt 3, Callback ID=0x16, Expected Reply=0x04) - BasicCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x20, 0x02, 0x05, 0x16, 0xdd
+2012-12-30 18:03:47:300 Node011,   ACK received CallbackId 0x16 Reply 0x04
+2012-12-30 18:03:47:302 Node011,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:47:302 Node011,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:49:299 Node011, WriteMsg Wait Timeout m_currentMsg=38038490
+2012-12-30 18:03:49:299 Node011, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:03:49:300 Node011, WriteMsg WriteNextMsg m_currentMsg=3803e6c0
+2012-12-30 18:03:49:300 
+2012-12-30 18:03:49:300 Node011, Sending command (Callback ID=0x17, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x25, 0x02, 0x05, 0x17, 0xd9
+2012-12-30 18:03:49:303 Node011,   ACK received CallbackId 0x17 Reply 0x04
+2012-12-30 18:03:49:305 Node011,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:49:305 Node011,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:51:301 Node011, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:03:51:301 
+2012-12-30 18:03:51:301 Node011, Sending command (Attempt 2, Callback ID=0x17, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x25, 0x02, 0x05, 0x17, 0xd9
+2012-12-30 18:03:51:304 Node011,   ACK received CallbackId 0x17 Reply 0x04
+2012-12-30 18:03:51:304 Node011,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:51:305 Node011, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:52:964 Node011,   Received: 0x01, 0x05, 0x00, 0x13, 0x17, 0x00, 0xfe
+2012-12-30 18:03:52:964 Node011,   ZW_SEND_DATA Request with callback ID 0x17 received (expected 0x17)
+2012-12-30 18:03:53:302 Node011, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:03:53:302 
+2012-12-30 18:03:53:302 Node011, Sending command (Attempt 3, Callback ID=0x17, Expected Reply=0x04) - SwitchBinaryCmd_Get (Node=11): 0x01, 0x09, 0x00, 0x13, 0x0b, 0x02, 0x25, 0x02, 0x05, 0x17, 0xd9
+2012-12-30 18:03:53:304 Node011,   ACK received CallbackId 0x17 Reply 0x04
+2012-12-30 18:03:53:306 Node011,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:53:307 Node011,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:54:058 Node011,   Received: 0x01, 0x05, 0x00, 0x13, 0x17, 0x00, 0xfe
+2012-12-30 18:03:54:058 Node011,   ZW_SEND_DATA Request with callback ID 0x17 received (expected 0x17)
+2012-12-30 18:03:54:415 Node011,   Received: 0x01, 0x05, 0x00, 0x13, 0x17, 0x00, 0xfe
+2012-12-30 18:03:54:415 Node011,   ZW_SEND_DATA Request with callback ID 0x17 received (expected 0x00)
+2012-12-30 18:03:54:416 Node011, WARNING: Unexpected Callback ID received
+2012-12-30 18:03:55:303 Node011, WriteMsg Wait Timeout m_currentMsg=3803e6c0
+2012-12-30 18:03:55:303 Node011, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:03:55:304 Node013, Query Stage Complete (Neighbors)
+2012-12-30 18:03:55:304 Node013, QueryStage_Session
+2012-12-30 18:03:55:304 Node013, Queuing command: SwitchAllCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x27, 0x02, 0x05, 0x18, 0xd2
+2012-12-30 18:03:55:304 Node013, Queuing Command: Query Stage Complete (Session)
+2012-12-30 18:03:55:304 Node014, Query Stage Complete (Dynamic)
+2012-12-30 18:03:55:305 Node014, QueryStage_Configuration
+2012-12-30 18:03:55:305 Node014, QueryStage_Complete
+2012-12-30 18:03:55:305 Node003, Query Stage Complete (Dynamic)
+2012-12-30 18:03:55:305 Node003, QueryStage_Configuration
+2012-12-30 18:03:55:305 Node003, QueryStage_Complete
+2012-12-30 18:03:55:305 Node006, Query Stage Complete (Dynamic)
+2012-12-30 18:03:55:306 Node006, QueryStage_Configuration
+2012-12-30 18:03:55:306 Node006, QueryStage_Complete
+2012-12-30 18:03:55:306 Node009, Query Stage Complete (Dynamic)
+2012-12-30 18:03:55:306 Node009, QueryStage_Configuration
+2012-12-30 18:03:55:306 Node009, QueryStage_Complete
+2012-12-30 18:03:55:306 Node011, Query Stage Complete (Dynamic)
+2012-12-30 18:03:55:306 Node011, QueryStage_Configuration
+2012-12-30 18:03:55:307 Node011, QueryStage_Complete
+2012-12-30 18:03:55:307 Node013, WriteMsg WriteNextMsg m_currentMsg=38038490
+2012-12-30 18:03:55:307 
+2012-12-30 18:03:55:307 Node013, Sending command (Callback ID=0x18, Expected Reply=0x04) - SwitchAllCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x27, 0x02, 0x05, 0x18, 0xd2
+2012-12-30 18:03:55:309 Node013,   ACK received CallbackId 0x18 Reply 0x04
+2012-12-30 18:03:55:312 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:55:312 Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:57:308 Node013, WriteMsg Wait Timeout m_currentMsg=38038490
+2012-12-30 18:03:57:308 
+2012-12-30 18:03:57:308 Node013, Sending command (Attempt 2, Callback ID=0x18, Expected Reply=0x04) - SwitchAllCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x27, 0x02, 0x05, 0x18, 0xd2
+2012-12-30 18:03:57:310 Node013,   ACK received CallbackId 0x18 Reply 0x04
+2012-12-30 18:03:57:313 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:03:57:313 Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:03:57:891 Node013,   Received: 0x01, 0x05, 0x00, 0x13, 0x18, 0x00, 0xf1
+2012-12-30 18:03:57:892 Node013,   ZW_SEND_DATA Request with callback ID 0x18 received (expected 0x18)
+2012-12-30 18:03:58:050 Node011,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0b, 0x03, 0x27, 0x03, 0xff, 0x21
+2012-12-30 18:03:58:051 
+2012-12-30 18:03:58:051 Node011, Refreshed Value: old value=3, new value=3, type=int32
+2012-12-30 18:03:58:051 Node011, Changes to this value are not verified
+2012-12-30 18:03:58:051 Node011, Received SwitchAll report from node 11: On and Off Enabled
+2012-12-30 18:03:59:309 Node013, WriteMsg Wait Timeout m_currentMsg=38038490
+2012-12-30 18:03:59:309 
+2012-12-30 18:03:59:309 Node013, Sending command (Attempt 3, Callback ID=0x18, Expected Reply=0x04) - SwitchAllCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x27, 0x02, 0x05, 0x18, 0xd2
+2012-12-30 18:03:59:311 Node013,   ACK received CallbackId 0x18 Reply 0x04
+2012-12-30 18:03:59:312 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:03:59:312 Node013, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:03:59:785 Node013,   Received: 0x01, 0x05, 0x00, 0x13, 0x18, 0x00, 0xf1
+2012-12-30 18:03:59:785 Node013,   ZW_SEND_DATA Request with callback ID 0x18 received (expected 0x18)
+2012-12-30 18:04:00:194 Node013,   Received: 0x01, 0x05, 0x00, 0x13, 0x18, 0x00, 0xf1
+2012-12-30 18:04:00:195 Node013,   ZW_SEND_DATA Request with callback ID 0x18 received (expected 0x00)
+2012-12-30 18:04:00:195 Node013, WARNING: Unexpected Callback ID received
+2012-12-30 18:04:01:309 Node013, WriteMsg Wait Timeout m_currentMsg=38038490
+2012-12-30 18:04:01:310 Node013, ERROR: Dropping command, expected response not received after 3 attempt(s)
+2012-12-30 18:04:01:310 Node013, Query Stage Complete (Session)
+2012-12-30 18:04:01:310 Node013, QueryStage_Dynamic
+2012-12-30 18:04:01:310 Node013, Queuing command: BasicCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x20, 0x02, 0x05, 0x19, 0xd4
+2012-12-30 18:04:01:311 Node013, Queuing command: SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x05, 0x1a, 0xd1
+2012-12-30 18:04:01:311 Node013, Queuing Command: Query Stage Complete (Dynamic)
+2012-12-30 18:04:01:311 Node013, WriteMsg WriteNextMsg m_currentMsg=380394f0
+2012-12-30 18:04:01:311 
+2012-12-30 18:04:01:312 Node013, Sending command (Callback ID=0x19, Expected Reply=0x04) - BasicCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x20, 0x02, 0x05, 0x19, 0xd4
+2012-12-30 18:04:01:314 Node013,   ACK received CallbackId 0x19 Reply 0x04
+2012-12-30 18:04:01:318 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:04:01:318 Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:04:03:313 Node013, WriteMsg Wait Timeout m_currentMsg=380394f0
+2012-12-30 18:04:03:313 
+2012-12-30 18:04:03:313 Node013, Sending command (Attempt 2, Callback ID=0x19, Expected Reply=0x04) - BasicCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x20, 0x02, 0x05, 0x19, 0xd4
+2012-12-30 18:04:03:315 Node013,   ACK received CallbackId 0x19 Reply 0x04
+2012-12-30 18:04:03:318 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:04:03:319 Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:04:03:385 Node013,   Received: 0x01, 0x05, 0x00, 0x13, 0x19, 0x00, 0xf0
+2012-12-30 18:04:03:385 Node013,   ZW_SEND_DATA Request with callback ID 0x19 received (expected 0x19)
+2012-12-30 18:04:03:537 Node013,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0d, 0x03, 0x20, 0x03, 0x00, 0xdf
+2012-12-30 18:04:03:538 
+2012-12-30 18:04:03:538 Node013, Received Basic report from node 13: level=0
+2012-12-30 18:04:03:538 Node013, Initial read of value
+2012-12-30 18:04:03:538 Node013,   Expected reply and command class was received
+2012-12-30 18:04:03:539 Node013,   Message transaction complete
+2012-12-30 18:04:03:539 
+2012-12-30 18:04:03:539 Node013, WriteMsg WriteNextMsg m_currentMsg=380029f0
+2012-12-30 18:04:03:539 
+2012-12-30 18:04:03:539 Node013, Sending command (Callback ID=0x1a, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x05, 0x1a, 0xd1
+2012-12-30 18:04:03:541 Node013,   ACK received CallbackId 0x1a Reply 0x04
+2012-12-30 18:04:03:543 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x01, 0xe8
+2012-12-30 18:04:03:543 Node013,   ZW_SEND_DATA delivered to Z-Wave stack
+2012-12-30 18:04:05:540 Node013, WriteMsg Wait Timeout m_currentMsg=380029f0
+2012-12-30 18:04:05:540 
+2012-12-30 18:04:05:540 Node013, Sending command (Attempt 2, Callback ID=0x1a, Expected Reply=0x04) - SwitchMultilevelCmd_Get (Node=13): 0x01, 0x09, 0x00, 0x13, 0x0d, 0x02, 0x26, 0x02, 0x05, 0x1a, 0xd1
+2012-12-30 18:04:05:542 Node013,   ACK received CallbackId 0x1a Reply 0x04
+2012-12-30 18:04:05:543 Node013,   Received: 0x01, 0x04, 0x01, 0x13, 0x00, 0xe9
+2012-12-30 18:04:05:543 Node013, ERROR: ZW_SEND_DATA could not be delivered to Z-Wave stack
+2012-12-30 18:04:05:818 Node013,   Received: 0x01, 0x05, 0x00, 0x13, 0x1a, 0x00, 0xf3
+2012-12-30 18:04:05:818 Node013,   ZW_SEND_DATA Request with callback ID 0x1a received (expected 0x1a)
+2012-12-30 18:04:06:584 Node013,   Received: 0x01, 0x05, 0x00, 0x13, 0x1a, 0x00, 0xf3
+2012-12-30 18:04:06:584 Node013,   ZW_SEND_DATA Request with callback ID 0x1a received (expected 0x00)
+2012-12-30 18:04:06:584 Node013, WARNING: Unexpected Callback ID received
+2012-12-30 18:04:06:735 Node013,   Received: 0x01, 0x09, 0x00, 0x04, 0x00, 0x0d, 0x03, 0x26, 0x03, 0x00, 0xd9
+2012-12-30 18:04:06:735 
+2012-12-30 18:04:06:736 Node013, Received SwitchMultiLevel report: level=0
+2012-12-30 18:04:06:736 Node013, Initial read of value
+2012-12-30 18:04:06:736 Node013,   Expected reply and command class was received
+2012-12-30 18:04:06:736 Node013,   Message transaction complete
+2012-12-30 18:04:06:736 
+2012-12-30 18:04:06:737 Node013, Query Stage Complete (Dynamic)
+2012-12-30 18:04:06:737 Node013, QueryStage_Configuration
+2012-12-30 18:04:06:737 Node013, QueryStage_Complete
+2012-12-30 18:04:06:737          Node query processing complete.
+2012-12-30 18:04:06:746 mgr,     Manager::WriteConfig completed for driver with home ID of 0x014d02a8
